@@ -30,9 +30,18 @@ def reverse(q):
         return q
 
 def hanoiTowers(discNum, fromPole, withPole, toPole):
-	if discNum == 1:
+	if discNum >= 1:
+		hanoiTowers(discNum-1, fromPole, toPole, withPole)
 		print("move from " + fromPole + " to " + toPole)
-	else:
-		hanoiTowers(discnum-1, fromPole, withPole, toPole)
-		print("move from " + fromPole + " to " + toPole)
-		hanoiTowers(discnum-1, withPole, fromPole, toPole)
+		hanoiTowers(discNum-1, withPole, fromPole, toPole)
+
+def palindrome(st):
+    st = ''.join(st.split())
+    if st == "":
+        return True
+    elif st[0] != st[-1]:
+        return False
+    else:
+        return palindrome(st[1:-1])
+
+print(hanoiTowers(3, "A", "B", "C"))

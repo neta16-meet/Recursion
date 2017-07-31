@@ -61,3 +61,14 @@ def reverse(q):
     after function:
     q ----> 4 -> 3 -> 2 -> 1
     '''
+
+def palindrome(str):
+    '''
+    Write a recursive function that takes a string and checks if it's a palindrome
+    (a word, phrase, or sequence that reads the same backward as forward).
+
+    Example:
+    "racecar" ---> True
+    "hello" ---> False
+    "1234321" ---> True
+    '''
