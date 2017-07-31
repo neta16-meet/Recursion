@@ -1,3 +1,23 @@
+def factorial(n):
+    if n == 1:
+        return 1
+    else:
+        return n*factorial(n-1)
+
+def pow(num, p):
+    if p == 1:
+        return num
+    else:
+        return num * pow(num, p-1)
+
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n-1) + fib(n-2)
+
 def reverse(q):
     if q.size() == 0:
         return None
