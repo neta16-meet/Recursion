@@ -43,5 +43,3 @@ def palindrome(st):
         return False
     else:
         return palindrome(st[1:-1])
-
-print(hanoiTowers(3, "A", "B", "C"))
